@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="contentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- TextView:  title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:layout_marginLeft="@dimen/margin_side"
+            android:layout_marginRight="@dimen/margin_side"
+            android:layout_marginTop="@dimen/margin_top"
+            android:gravity="center_horizontal"
+            android:text="@string/title"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="@dimen/margin_side"
+            android:layout_marginRight="@dimen/margin_side"
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@android:color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- TEXT:  of question1 -->
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_side"
+                android:layout_marginRight="@dimen/margin_side"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="@string/questionOne"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/answer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question1"
+                android:layout_marginLeft="@dimen/margin_side"
+                android:layout_marginRight="@dimen/margin_side"
+                android:layout_marginTop="@dimen/margin_top"
+                android:hint="@string/answer_string"
+                android:inputType="text" />
+
+            <!-- ButtonView to total score of quiz -->
+            <Button
+                android:layout_below="@id/answer1"
+                android:id="@+id/answer_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:onClick="getAnswer"
+                android:text="@string/answer_button_text"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- TEXT:  of question1 -->
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/questionOne"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question2"
+                android:hint="@string/answer_string"
+                android:inputType="text" />
+
+        </RelativeLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- TEXT:  of question1 -->
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/questionOne"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/answer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question3"
+                android:hint="@string/answer_string"
+                android:inputType="text" />
+
+        </RelativeLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- TEXT:  of question1 -->
+            <TextView
+                android:id="@+id/question4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/questionOne"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/answer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question4"
+                android:hint="@string/answer_string"
+                android:inputType="text" />
+
+        </RelativeLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- TEXT:  of question1 -->
+            <TextView
+                android:id="@+id/question5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/questionOne"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/answer5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question5"
+                android:hint="@string/answer_string"
+                android:inputType="text" />
+
+        </RelativeLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- TEXT:  of question1 -->
+            <TextView
+                android:id="@+id/question6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/questionOne"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/answer6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question6"
+                android:hint="@string/answer_string"
+                android:inputType="text" />
+
+        </RelativeLayout>
+
+
+        <!-- old questions -->
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
+
+        <!-- Question 1:  Jan Matzeliger -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--IMAGE:  Jan Matzeliger-->
+            <ImageView
+                android:id="@+id/jan_matzeliger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/jan_matzeliger" />
+
+            <!-- TEXT:  of question1 -->
+            <TextView
+                android:id="@+id/question1a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toEndOf="@+id/jan_matzeliger"
+                android:layout_toRightOf="@id/jan_matzeliger"
+                android:text="@string/questionOne"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Radio group for Question1 answers -->
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question1a"
+                android:layout_toEndOf="@+id/jan_matzeliger"
+                android:layout_toRightOf="@id/jan_matzeliger"
+                android:orientation="vertical">
+
+                <!-- Lawrence -->
+                <RadioButton
+                    android:id="@+id/lawrence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/lawrence" />
+
+                <!-- Lynn -->
+                <RadioButton
+                    android:id="@+id/lynn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/lynn" />
+
+                <!-- Lowell -->
+                <RadioButton
+                    android:id="@+id/lowell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/lowell" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
+
+        <!-- Question 2:  Emily Dickenson -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--IMAGE:  Emily Dickenson -->
+            <ImageView
+                android:id="@+id/emily_dickenson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/dickenson" />
+
+            <!-- TEXT:  of question2 -->
+            <TextView
+                android:id="@+id/question2a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toLeftOf="@+id/emily_dickenson"
+                android:layout_toStartOf="@+id/emily_dickenson"
+                android:text="@string/questionTwo"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Radio group for question2 answers -->
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question2a"
+                android:layout_toLeftOf="@id/emily_dickenson"
+                android:layout_toStartOf="@+id/emily_dickenson"
+                android:orientation="vertical">
+
+                <!-- Amherst -->
+                <RadioButton
+                    android:id="@+id/amherst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/amherst" />
+
+                <!-- Northampton -->
+
+                <RadioButton
+                    android:id="@+id/northampton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/northampton" />
+
+                <!-- South Hadley -->
+                <RadioButton
+                    android:id="@+id/south_hadley"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/south_hadley" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
+
+        <!-- Question 3:  Robert Goddard -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--IMAGE:  Robert Goddard -->
+            <ImageView
+                android:id="@+id/robert_goddard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/goddard" />
+
+            <!-- TEXT:  of question3 -->
+            <TextView
+                android:id="@+id/question3a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/robert_goddard"
+                android:layout_margin="8dp"
+                android:text="@string/questionThree"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Radio group for question3 answers -->
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radio_group_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question3a"
+                android:orientation="vertical">
+
+                <!-- 1926 -->
+                <RadioButton
+                    android:id="@+id/year_1926"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/year_1926" />
+
+                <!-- 1933 -->
+                <RadioButton
+                    android:id="@+id/year_1933"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/year_1933" />
+
+                <!-- 1940 -->
+                <RadioButton
+                    android:id="@+id/year_1940"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/year_1940" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
+
+        <!-- Question 4:  ML King -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--IMAGE:  ML King -->
+            <ImageView
+                android:id="@+id/martin_luther_king"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/mlking" />
+
+            <!-- TEXT:  of question4 -->
+            <TextView
+                android:id="@+id/question4a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toLeftOf="@id/martin_luther_king"
+                android:layout_toStartOf="@+id/martin_luther_king"
+                android:text="@string/questionFour"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Radio group of question4 answers -->
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question4a"
+                android:layout_toLeftOf="@id/martin_luther_king"
+                android:layout_toStartOf="@+id/martin_luther_king"
+                android:orientation="vertical">
+
+                <!-- Harvard -->
+                <RadioButton
+                    android:id="@+id/harvard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/harvard" />
+
+                <!-- Boston College -->
+                <RadioButton
+                    android:id="@+id/boston_college"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/boston_college" />
+
+                <!-- Boston University -->
+                <RadioButton
+                    android:id="@+id/boston_university"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/boston_university" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <!-- Separator-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
+
+        <!-- Question 5:  Dr. Seuss -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--IMAGE:  Dr. Seuss -->
+            <ImageView
+                android:id="@+id/doctor_seuss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/seuss" />
+
+            <!-- TEXT:  of question5 -->
+            <TextView
+                android:id="@+id/question5a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doctor_seuss"
+                android:layout_margin="8dp"
+                android:text="@string/questionFive"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Radio group of question5 answers -->
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question5a"
+                android:orientation="vertical">
+
+                <!-- Springfield -->
+                <RadioButton
+                    android:id="@+id/springfield"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/springfield" />
+
+                <!-- Worcester -->
+                <RadioButton
+                    android:id="@+id/wocrcester"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/worcester" />
+
+                <!-- Pittsfield -->
+                <RadioButton
+                    android:id="@+id/pittsfield"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/pittsfield" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
+
+        <!-- Question 6:  Roger Williams -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--IMAGE:  Roger Williams -->
+            <ImageView
+                android:id="@+id/roger_williams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/roger_williams" />
+
+            <!-- TEXT:  of question6 -->
+            <TextView
+                android:id="@+id/question6a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toLeftOf="@id/roger_williams"
+                android:layout_toStartOf="@+id/roger_williams"
+                android:text="@string/questionSix"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Radio group of question6 answers -->
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question6a"
+                android:layout_toLeftOf="@id/roger_williams"
+                android:layout_toStartOf="@+id/roger_williams"
+                android:orientation="vertical">
+
+                <!-- Plagarism -->
+                <RadioButton
+                    android:id="@+id/plagarism"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/plagiarism" />
+
+                <!-- Unpaid taxes -->
+                <RadioButton
+                    android:id="@+id/unpaid_taxes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/unpaid_taxes" />
+
+                <!-- Religious liberty -->
+                <RadioButton
+                    android:id="@+id/religious_liberty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/religious_liberty" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
+
+        <!-- Question 7:  Mass Statehood -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--IMAGE:  Old State House-->
+            <ImageView
+                android:id="@+id/statehouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/old_state_house" />
+
+            <!-- TEXT:  of question7 -->
+            <TextView
+                android:id="@+id/question7a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toEndOf="@+id/statehouse"
+                android:layout_toRightOf="@id/statehouse"
+                android:text="@string/questionSeven"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Radio group for Question7 answers -->
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question7a"
+                android:layout_toEndOf="@+id/statehouse"
+                android:layout_toRightOf="@id/statehouse"
+                android:orientation="vertical">
+
+                <!-- Lawrence -->
+                <RadioButton
+                    android:id="@+id/old_north_church"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/old_north_church" />
+
+                <!-- Lynn -->
+                <RadioButton
+                    android:id="@+id/old_state_house"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/old_state_house" />
+
+                <!-- Lowell -->
+                <RadioButton
+                    android:id="@+id/faneuil_hall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/faneuil_hall" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
+
+        <!-- Question 8:  USS Constitution -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--IMAGE:  USS Constitution -->
+            <ImageView
+                android:id="@+id/ship_constitution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/uss_constitution" />
+
+            <!-- TEXT:  of question8 -->
+            <TextView
+                android:id="@+id/question8a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ship_constitution"
+                android:layout_margin="8dp"
+                android:text="@string/questionEight"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Radio group of question8 answers -->
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question8a"
+                android:orientation="vertical">
+
+                <!-- Revolutionary War -->
+                <RadioButton
+                    android:id="@+id/revolutionary_war"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/revolutionary_war" />
+
+                <!-- War of 1812 -->
+                <RadioButton
+                    android:id="@+id/war_of_1812"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/war_1812" />
+
+                <!-- Mexican-American War -->
+                <RadioButton
+                    android:id="@+id/mexican_american_war"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/mexican_american_war" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
+
+        <!-- ButtonView to total score of quiz -->
+        <Button
+            android:id="@+id/total_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:onClick="displayScore"
+            android:text="@string/total_score"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</ScrollView>

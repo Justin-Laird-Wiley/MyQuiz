@@ -1,0 +1,96 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Postage Stamp Challenge</string>
+
+    <!-- Title strings -->
+    <string name="title">History through stamps!</string>
+    <string name="subtitle">
+        \tThis is a trivia quiz about historical events, as depicted on US postage
+        stamps, that occurred in the state of Massachusetts in the United States.\n
+
+        \tAfter each question, select the button next to the answer you think is correct; then click
+        the Total Score button at the end to have your score displayed in a pop-up message.\n
+
+        \tIf you like, you can enter your name in the field below, and it will be displayed with your
+        score at the end of the quiz.\n
+
+        \tThe check box exists to comply with project rubric \-\- functionally, it has nothing to do
+        with the quiz, and is there for your gratification and amusement.
+    </string>
+
+    <!-- EditText and CheckBox strings -->
+    <string name="name_edit_text_hint">Enter your name, if you like</string>
+    <string name="mandatory_check_box">Check here for rubric compliance</string>
+    <string name="compliance_message">!!! \-\- You are now rubric-compliant</string>
+
+    <!-- Question strings -->
+    <string name="questionOne">In what Massachusetts factory city did Jan Matzeliger develop his
+        shoe-lasting machine that transformed the shoe industry?</string>
+    <string name="questionTwo">Emily Dickinson was born and died in what western Massachusetts
+        college town?</string>
+    <string name="questionThree">Robert Goddard successfully tested the first liquid-fueled rocket
+         in Auburn, Massachusetts in what year?</string>
+    <string name="questionFour">Martin Luther King received his doctorate in theology from what
+        Boston area university?</string>
+    <string name="questionFive">Dr. Seuss (Theodore Geisel) was born in 1904 in what Massachusetts
+        city?</string>
+    <string name="questionSix">In 1636, following his exile from Massachusetts, Roger Williams
+        founded a new colony on Narragansett Bay that woiuld become Rhode Island.  Why was he kicked
+        out of Massachusetts?</string>
+    <string name="questionSeven">What is the building pictured on this stamp celebrating the
+        bicentennial of Massachusetts statehood?</string>
+    <string name="questionEight">The USS Constitution - the oldest commissioned ship in the US Navy - is
+        stationed at the Charlestown Navy Yard in Boston.  She fought her most notable actions
+        during which war?</string>
+
+    <!-- Answer strings -->
+    <!-- question1-->
+    <string name="lawrence">Lawrence</string>
+    <string name="lynn">Lynn</string>
+    <string name="lowell">Lowell</string>
+
+    <!-- question2 -->
+    <string name="amherst">Amherst</string>
+    <string name="northampton">Northampton</string>
+    <string name="south_hadley">South Hadley</string>
+
+    <!-- question3 -->
+    <string name="year_1926">1926</string>
+    <string name="year_1933">1933</string>
+    <string name="year_1940">1940</string>
+    <!-- question4 -->
+    <string name="harvard">Harvard University</string>
+    <string name="boston_college">Boston College</string>
+    <string name="boston_university">Boston University</string>
+
+    <!-- question5 -->
+    <string name="springfield">Springfield</string>
+    <string name="worcester">Worcester</string>
+    <string name="pittsfield">Pittsfield</string>
+
+    <!-- question6 -->
+    <string name="plagiarism">Plagiarism</string>
+    <string name="unpaid_taxes">Unpaid taxes</string>
+    <string name="religious_liberty">Disputes over religious liberty</string>
+
+    <!-- question7 -->
+    <string name="old_north_church">Old North Church</string>
+    <string name="old_state_house">Old State House</string>
+    <string name="faneuil_hall">Faneuil Hall</string>
+
+    <!-- question8 -->
+    <string name="revolutionary_war">The Revolutionary War</string>
+    <string name="war_1812">The War of 1812</string>
+    <string name="mexican_american_war">The Mexican-American War</string>
+
+    <!-- Total Score button -->
+    <string name="total_score">Compute Score</string>
+
+    <string name="answer_button_text">Check Answer</string>
+
+
+
+
+    <!-- Strings for MyQuiz -->
+    <string name="answer_string">Answer</string>
+
+</resources>
