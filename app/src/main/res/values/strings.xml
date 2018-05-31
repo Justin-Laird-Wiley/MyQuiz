@@ -1,5 +1,5 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">Postage Stamp Challenge</string>
+    <string name="app_name">QUIZ QUIZ QUIZ</string>
 
     <!-- Title strings -->
     <string name="title">History through stamps!</string>
@@ -23,24 +23,22 @@
     <string name="compliance_message">!!! \-\- You are now rubric-compliant</string>
 
     <!-- Question strings -->
-    <string name="questionOne">In what Massachusetts factory city did Jan Matzeliger develop his
-        shoe-lasting machine that transformed the shoe industry?</string>
-    <string name="questionTwo">Emily Dickinson was born and died in what western Massachusetts
-        college town?</string>
-    <string name="questionThree">Robert Goddard successfully tested the first liquid-fueled rocket
-         in Auburn, Massachusetts in what year?</string>
-    <string name="questionFour">Martin Luther King received his doctorate in theology from what
-        Boston area university?</string>
-    <string name="questionFive">Dr. Seuss (Theodore Geisel) was born in 1904 in what Massachusetts
-        city?</string>
-    <string name="questionSix">In 1636, following his exile from Massachusetts, Roger Williams
-        founded a new colony on Narragansett Bay that woiuld become Rhode Island.  Why was he kicked
-        out of Massachusetts?</string>
-    <string name="questionSeven">What is the building pictured on this stamp celebrating the
-        bicentennial of Massachusetts statehood?</string>
-    <string name="questionEight">The USS Constitution - the oldest commissioned ship in the US Navy - is
-        stationed at the Charlestown Navy Yard in Boston.  She fought her most notable actions
-        during which war?</string>
+    <string name="questionOne">In what year did Franklin Delano Roosevelt contract polio?</string>
+    <string name="questionTwo">How was Eleanor Roosevelt related to Theodore Roosevelt?</string>
+    <string name="questionThree">Before he was elected President in 1932, Franklin Delano Roosevelt
+        was the governor of which state?</string>
+    <string name="questionFour">After failing to gain the Republican nomination for President in
+        1912, Theodore Roosevelt ran as a third party candidate in which party?</string>
+    <string name="questionFive">What is the name of Theodore Roosevelt\'s home in Oyster Bay, NY?</string>
+    <string name="questionSix">Franklin Delano Roosevelt\'s most far-reaching New Deal program,
+        which provided government pensions for retirees, was called?</string>
+    <string name="questionSeven">Theodore Roosevelt at first became President after the assassination
+        of which sitting President?</string>
+    <string name="questionEight">Franklin Roosevelt founded a polio treatment center in what Georgia
+        town?</string>
+    <string name="questionNine">Both Theodore and Franklin attended what ivy-league university?</string>
+    <string name="questionTen">Franklin Roosevelt met with Josef Stalin for the first time in 1943 in
+        what Mideast city?</string>
 
     <!-- Answer strings -->
     <!-- question1-->
