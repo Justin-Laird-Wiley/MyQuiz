@@ -3,9 +3,9 @@ package com.example.justin.myquiz;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.CheckBox;
+//import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.TextView;
+//import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -40,11 +40,11 @@ public class MainActivity extends AppCompatActivity {
      * This method reads the name entered in the EditText view, and reads it into playerName.
      * Called by displayScore
      */
-//    private void getPlayerName() {
-//
+    private void getPlayerName() {
+
 //        EditText quizNameTextView = (EditText) findViewById(R.id.player_name_edit_text);
 //        playerName = quizNameTextView.getText().toString();
-//    }
+    }
 
     /**
      * This method checks the rubric-compliance CheckBox.  If isChecked() is true, compliance_message
@@ -88,53 +88,53 @@ public class MainActivity extends AppCompatActivity {
      */
     public void checkCorrect(View view) {
 
-        // check question 1
-        if (view.getId() == R.id.lynn)
-            question1 = true;
-        else if ((view.getId() == R.id.lawrence) || (view.getId() == R.id.lowell))
-            question1 = false;
-
-        // check question 2
-        if (view.getId() == R.id.amherst)
-            question2 = true;
-        else if ((view.getId() == R.id.northampton) || (view.getId() == R.id.south_hadley))
-            question2 = false;
-
-        // check question 3
-        if (view.getId() == R.id.year_1926)
-            question3 = true;
-        else if ((view.getId() == R.id.year_1933) || (view.getId() == R.id.year_1940))
-            question3 = false;
-
-        // check question 4
-        if (view.getId() == R.id.boston_university)
-            question4 = true;
-        else if ((view.getId() == R.id.harvard) || (view.getId() == R.id.boston_college))
-            question4 = false;
-
-        // check question 5
-        if (view.getId() == R.id.springfield)
-            question5 = true;
-        else if ((view.getId() == R.id.wocrcester) || (view.getId() == R.id.pittsfield))
-            question5 = false;
-
-        // check question 6
-        if (view.getId() == R.id.religious_liberty)
-            question6 = true;
-        else if ((view.getId() == R.id.unpaid_taxes) || (view.getId() == R.id.plagarism))
-            question6 = false;
-
-        // check question 7
-        if (view.getId() == R.id.old_state_house)
-            question7 = true;
-        else if ((view.getId() == R.id.old_north_church) || (view.getId() == R.id.faneuil_hall))
-            question7 = false;
-
-        // check question 8
-        if (view.getId() == R.id.war_of_1812)
-            question8 = true;
-        else if ((view.getId() == R.id.revolutionary_war) || (view.getId() == R.id.mexican_american_war))
-            question8 = false;
+//        // check question 1
+//        if (view.getId() == R.id.lynn)
+//            question1 = true;
+//        else if ((view.getId() == R.id.lawrence) || (view.getId() == R.id.lowell))
+//            question1 = false;
+//
+//        // check question 2
+//        if (view.getId() == R.id.amherst)
+//            question2 = true;
+//        else if ((view.getId() == R.id.northampton) || (view.getId() == R.id.south_hadley))
+//            question2 = false;
+//
+//        // check question 3
+//        if (view.getId() == R.id.year_1926)
+//            question3 = true;
+//        else if ((view.getId() == R.id.year_1933) || (view.getId() == R.id.year_1940))
+//            question3 = false;
+//
+//        // check question 4
+//        if (view.getId() == R.id.boston_university)
+//            question4 = true;
+//        else if ((view.getId() == R.id.harvard) || (view.getId() == R.id.boston_college))
+//            question4 = false;
+//
+//        // check question 5
+//        if (view.getId() == R.id.springfield)
+//            question5 = true;
+//        else if ((view.getId() == R.id.wocrcester) || (view.getId() == R.id.pittsfield))
+//            question5 = false;
+//
+//        // check question 6
+//        if (view.getId() == R.id.religious_liberty)
+//            question6 = true;
+//        else if ((view.getId() == R.id.unpaid_taxes) || (view.getId() == R.id.plagarism))
+//            question6 = false;
+//
+//        // check question 7
+//        if (view.getId() == R.id.old_state_house)
+//            question7 = true;
+//        else if ((view.getId() == R.id.old_north_church) || (view.getId() == R.id.faneuil_hall))
+//            question7 = false;
+//
+//        // check question 8
+//        if (view.getId() == R.id.war_of_1812)
+//            question8 = true;
+//        else if ((view.getId() == R.id.revolutionary_war) || (view.getId() == R.id.mexican_american_war))
+//            question8 = false;
     }
 
     /**

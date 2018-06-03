@@ -2,7 +2,7 @@
     <string name="app_name">QUIZ QUIZ QUIZ</string>
 
     <!-- Title strings -->
-    <string name="title">History through stamps!</string>
+    <string name="title">The Roosevelts</string>
     <string name="subtitle">
         \tThis is a trivia quiz about historical events, as depicted on US postage
         stamps, that occurred in the state of Massachusetts in the United States.\n
@@ -23,62 +23,89 @@
     <string name="compliance_message">!!! \-\- You are now rubric-compliant</string>
 
     <!-- Question strings -->
-    <string name="questionOne">In what year did Franklin Delano Roosevelt contract polio?</string>
-    <string name="questionTwo">How was Eleanor Roosevelt related to Theodore Roosevelt?</string>
-    <string name="questionThree">Before he was elected President in 1932, Franklin Delano Roosevelt
-        was the governor of which state?</string>
-    <string name="questionFour">After failing to gain the Republican nomination for President in
+    <string name="questionOne">Theodore Roosevelt led his cavalry charge up San Juan Hill in Cuba
+        during what war?</string>
+
+    <string name="questionTwo">Theodore Roosevelt at first became President after the assassination
+        of which sitting President in 1901?</string>
+
+    <string name="questionThree">After failing to gain the Republican nomination for President in
         1912, Theodore Roosevelt ran as a third party candidate in which party?</string>
-    <string name="questionFive">What is the name of Theodore Roosevelt\'s home in Oyster Bay, NY?</string>
-    <string name="questionSix">Franklin Delano Roosevelt\'s most far-reaching New Deal program,
-        which provided government pensions for retirees, was called?</string>
-    <string name="questionSeven">Theodore Roosevelt at first became President after the assassination
-        of which sitting President?</string>
-    <string name="questionEight">Franklin Roosevelt founded a polio treatment center in what Georgia
+
+    <string name="questionFour">What is the name of Theodore Roosevelt\'s home in Oyster Bay, NY?</string>
+
+    <string name="questionFive">Both Theodore and Franklin served in what Federal positionin the
+        War Department?</string>
+
+    <string name="questionSix">Both Theodore and Franklin served as governor of what state?</string>
+
+    <string name="questionSeven">How was Eleanor Roosevelt, Franklin\'s wife, related to Theodore
+        Roosevelt?</string>
+
+    <string name="questionEight">In what year did Franklin Delano Roosevelt contract polio?</string>
+
+    <string name="questionNine">Franklin Roosevelt founded a polio treatment center in what Georgia
         town?</string>
-    <string name="questionNine">Both Theodore and Franklin attended what ivy-league university?</string>
-    <string name="questionTen">Franklin Roosevelt met with Josef Stalin for the first time in 1943 in
+
+    <string name="questionTen">Thwarted by Congress in his 2nd term, Franklin Roosevelt attempted
+        to stack which branch of government with appointees favorable to his legislative agenda?</string>
+
+    <string name="questionEleven">Franklin Delano Roosevelt\'s most far-reaching New Deal program,
+        which provided government pensions for retirees, was called?</string>
+
+    <string name="questionTwelve">Franklin Roosevelt met with Josef Stalin for the first time in 1943 in
         what Mideast city?</string>
 
     <!-- Answer strings -->
     <!-- question1-->
-    <string name="lawrence">Lawrence</string>
-    <string name="lynn">Lynn</string>
-    <string name="lowell">Lowell</string>
+    <string name="world_war_one">World War I</string>
+    <string name="mexican_american_war">Mexican\-American War</string>
+    <string name="spanish_american_war">Spanish\-American War</string>
 
     <!-- question2 -->
-    <string name="amherst">Amherst</string>
-    <string name="northampton">Northampton</string>
-    <string name="south_hadley">South Hadley</string>
+    <string name="mckinley">William McKinley</string>
+    <string name="garfield">James Garfield</string>
+    <string name="lincoln">Abraham Lincoln</string>
 
     <!-- question3 -->
-    <string name="year_1926">1926</string>
-    <string name="year_1933">1933</string>
-    <string name="year_1940">1940</string>
+    <string name="the_progressive_party">progressive</string>
+
     <!-- question4 -->
-    <string name="harvard">Harvard University</string>
-    <string name="boston_college">Boston College</string>
-    <string name="boston_university">Boston University</string>
+    <string name="sagamore_hill">Sagamore Hill</string>
 
     <!-- question5 -->
-    <string name="springfield">Springfield</string>
-    <string name="worcester">Worcester</string>
-    <string name="pittsfield">Pittsfield</string>
+    <string name="assistant_secretary_navy">Assistant Secretary of the Navy</string>
+    <string name="inspector_general_army">Inspector General of the Army</string>
+    <string name="president_army_war_college">President of the Army War College</string>
 
     <!-- question6 -->
-    <string name="plagiarism">Plagiarism</string>
-    <string name="unpaid_taxes">Unpaid taxes</string>
-    <string name="religious_liberty">Disputes over religious liberty</string>
+    <string name="new_york">New York</string>
 
     <!-- question7 -->
-    <string name="old_north_church">Old North Church</string>
-    <string name="old_state_house">Old State House</string>
-    <string name="faneuil_hall">Faneuil Hall</string>
+    <string name="cousin">They were second cousins</string>
+    <string name="niece">She was his niece</string>
+    <string name="stepdaughter">She was his stepdaughter</string>
 
     <!-- question8 -->
-    <string name="revolutionary_war">The Revolutionary War</string>
-    <string name="war_1812">The War of 1812</string>
-    <string name="mexican_american_war">The Mexican-American War</string>
+    <string name="year_1914">1914</string>
+    <string name="year_1921">1921</string>
+    <string name="year_1934">1934</string>
+
+    <!-- answer9 -->
+    <string name="warm_springs">Warm Springs</string>
+
+    <!-- answer10 -->
+    <string name="supreme_court">Supreme Court</string>
+
+    <!-- answer11 -->
+    <string name="social_security">Social Security</string>
+
+    <!-- answer12 -->
+    <string name="baghdad">Baghdad</string>
+    <string name="tehran">Tehran</string>
+    <string name="jerusalem">Jerusalem</string>
+
+
 
     <!-- Total Score button -->
     <string name="total_score">Compute Score</string>
