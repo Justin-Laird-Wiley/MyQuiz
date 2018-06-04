@@ -22,7 +22,7 @@
             android:gravity="center_horizontal"
             android:text="@string/title"
             android:textAllCaps="true"
-            android:textColor="@android:color/black"
+            android:textColor="@color/text_color"
             android:textSize="24sp" />
 
         <!-- Separator -->
@@ -32,7 +32,7 @@
             android:layout_marginLeft="@dimen/margin_side"
             android:layout_marginRight="@dimen/margin_side"
             android:layout_marginTop="@dimen/margin_top"
-            android:background="@android:color/black" />
+            android:background="@color/text_color" />
 
         <!-- Question 1 -->
         <RelativeLayout
@@ -55,6 +55,9 @@
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_side"
+                android:layout_marginRight="@dimen/margin_side"
+                android:layout_marginTop="@dimen/margin_top"
                 android:layout_below="@id/question1"
                 android:orientation="vertical">
 
@@ -63,7 +66,7 @@
                     android:id="@+id/w_w_i"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@android:color/black"
+                    android:buttonTint="@color/text_color"
                     android:onClick="checkCorrect"
                     android:text="@string/world_war_one" />
 
@@ -72,7 +75,7 @@
                     android:id="@+id/mex_am_war"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@android:color/black"
+                    android:buttonTint="@color/text_color"
                     android:onClick="checkCorrect"
                     android:text="@string/mexican_american_war" />
 
@@ -81,7 +84,7 @@
                     android:id="@+id/span_am_war"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@android:color/black"
+                    android:buttonTint="@color/text_color"
                     android:onClick="checkCorrect"
                     android:text="@string/spanish_american_war" />
             </RadioGroup>
@@ -95,7 +98,7 @@
             android:layout_marginLeft="@dimen/margin_side"
             android:layout_marginRight="@dimen/margin_side"
             android:layout_marginTop="@dimen/margin_top"
-            android:background="@android:color/black" />
+            android:background="@color/text_color" />
 
         <!-- Question 2 -->
         <RelativeLayout
@@ -117,34 +120,37 @@
             <!-- Radio group for question2 answers -->
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
+                android:layout_marginLeft="@dimen/margin_side"
+                android:layout_marginRight="@dimen/margin_side"
+                android:layout_marginTop="@dimen/margin_top"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/question2"
                 android:orientation="vertical">
-
-                <!-- RadioButton:  McKinley -->
-                <RadioButton
-                    android:id="@+id/wm_mckinley"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@android:color/black"
-                    android:onClick="checkCorrect"
-                    android:text="@string/mckinley" />
 
                 <!-- RadioButton:  Garfield -->
                 <RadioButton
                     android:id="@+id/james_garfield"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@android:color/black"
+                    android:buttonTint="@color/text_color"
                     android:onClick="checkCorrect"
                     android:text="@string/garfield" />
+
+                <!-- RadioButton:  McKinley -->
+                <RadioButton
+                    android:id="@+id/wm_mckinley"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/text_color"
+                    android:onClick="checkCorrect"
+                    android:text="@string/mckinley" />
 
                 <!-- RadioButton:  Lincoln -->
                 <RadioButton
                     android:id="@+id/abe_lincoln"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@android:color/black"
+                    android:buttonTint="@color/text_color"
                     android:onClick="checkCorrect"
                     android:text="@string/lincoln" />
             </RadioGroup>
@@ -158,7 +164,7 @@
             android:layout_marginLeft="@dimen/margin_side"
             android:layout_marginRight="@dimen/margin_side"
             android:layout_marginTop="@dimen/margin_top"
-            android:background="@android:color/black" />
+            android:background="@color/text_color" />
 
         <!-- Question 3 -->
         <RelativeLayout
@@ -198,7 +204,7 @@
             android:layout_marginLeft="@dimen/margin_side"
             android:layout_marginRight="@dimen/margin_side"
             android:layout_marginTop="@dimen/margin_top"
-            android:background="@android:color/black" />
+            android:background="@color/text_color" />
 
         <!-- Question 4 -->
         <RelativeLayout
@@ -238,7 +244,7 @@
             android:layout_marginLeft="@dimen/margin_side"
             android:layout_marginRight="@dimen/margin_side"
             android:layout_marginTop="@dimen/margin_top"
-            android:background="@android:color/black" />
+            android:background="@color/text_color" />
 
         <!-- Question 5-->
         <RelativeLayout
@@ -261,24 +267,18 @@
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_side"
+                android:layout_marginRight="@dimen/margin_side"
+                android:layout_marginTop="@dimen/margin_top"
                 android:layout_below="@id/question5"
                 android:orientation="vertical">
-
-                <!-- RadioButton:  Assistant Secretary of the Navy -->
-                <RadioButton
-                    android:id="@+id/asst_secty_navy"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@android:color/black"
-                    android:onClick="checkCorrect"
-                    android:text="@string/assistant_secretary_navy" />
 
                 <!-- RadioButton:  Inspector General of the Army -->
                 <RadioButton
                     android:id="@+id/insp_gen_army"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@android:color/black"
+                    android:buttonTint="@color/text_color"
                     android:onClick="checkCorrect"
                     android:text="@string/inspector_general_army" />
 
@@ -287,9 +287,19 @@
                     android:id="@+id/pres_army_war_college"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@android:color/black"
+                    android:buttonTint="@color/text_color"
                     android:onClick="checkCorrect"
                     android:text="@string/president_army_war_college" />
+
+                <!-- RadioButton:  Assistant Secretary of the Navy -->
+                <RadioButton
+                    android:id="@+id/asst_secty_navy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/text_color"
+                    android:onClick="checkCorrect"
+                    android:text="@string/assistant_secretary_navy" />
+
             </RadioGroup>
 
         </RelativeLayout>
@@ -301,7 +311,7 @@
             android:layout_marginLeft="@dimen/margin_side"
             android:layout_marginRight="@dimen/margin_side"
             android:layout_marginTop="@dimen/margin_top"
-            android:background="@android:color/black" />
+            android:background="@color/text_color" />
 
         <!-- Question 6 -->
         <RelativeLayout
@@ -341,14 +351,14 @@
             android:layout_marginLeft="@dimen/margin_side"
             android:layout_marginRight="@dimen/margin_side"
             android:layout_marginTop="@dimen/margin_top"
-            android:background="@android:color/black" />
+            android:background="@color/text_color" />
 
         <!-- Question 7-->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <!-- TEXT:  of question7 -->
+            <!-- TextView:  question7 -->
             <TextView
                 android:id="@+id/question7"
                 android:layout_width="match_parent"
@@ -363,6 +373,9 @@
             <!-- Radio group for question7 answers -->
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
+                android:layout_marginLeft="@dimen/margin_side"
+                android:layout_marginRight="@dimen/margin_side"
+                android:layout_marginTop="@dimen/margin_top"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/question7"
                 android:orientation="vertical">
@@ -372,7 +385,7 @@
                     android:id="@+id/second_cousin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@android:color/black"
+                    android:buttonTint="@color/text_color"
                     android:onClick="checkCorrect"
                     android:text="@string/cousin" />
 
@@ -381,7 +394,7 @@
                     android:id="@+id/niece"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@android:color/black"
+                    android:buttonTint="@color/text_color"
                     android:onClick="checkCorrect"
                     android:text="@string/niece" />
 
@@ -390,9 +403,10 @@
                     android:id="@+id/stepdaughter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@android:color/black"
+                    android:buttonTint="@color/text_color"
                     android:onClick="checkCorrect"
                     android:text="@string/stepdaughter" />
+
             </RadioGroup>
 
         </RelativeLayout>
@@ -404,7 +418,7 @@
             android:layout_marginLeft="@dimen/margin_side"
             android:layout_marginRight="@dimen/margin_side"
             android:layout_marginTop="@dimen/margin_top"
-            android:background="@android:color/black" />
+            android:background="@color/text_color" />
 
         <!-- Question 8 -->
         <RelativeLayout
@@ -426,6 +440,9 @@
             <!-- Radio group for question8 answers -->
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
+                android:layout_marginLeft="@dimen/margin_side"
+                android:layout_marginRight="@dimen/margin_side"
+                android:layout_marginTop="@dimen/margin_top"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/question8"
                 android:orientation="vertical">
@@ -435,7 +452,7 @@
                     android:id="@+id/year_of_1914"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@android:color/black"
+                    android:buttonTint="@color/text_color"
                     android:onClick="checkCorrect"
                     android:text="@string/year_1914" />
 
@@ -444,7 +461,7 @@
                     android:id="@+id/year_of_1921"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@android:color/black"
+                    android:buttonTint="@color/text_color"
                     android:onClick="checkCorrect"
                     android:text="@string/year_1921" />
 
@@ -453,7 +470,7 @@
                     android:id="@+id/year_of_1934"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@android:color/black"
+                    android:buttonTint="@color/text_color"
                     android:onClick="checkCorrect"
                     android:text="@string/year_1934" />
             </RadioGroup>
@@ -467,7 +484,7 @@
             android:layout_marginLeft="@dimen/margin_side"
             android:layout_marginRight="@dimen/margin_side"
             android:layout_marginTop="@dimen/margin_top"
-            android:background="@android:color/black" />
+            android:background="@color/text_color" />
 
         <!-- Question 9 -->
         <RelativeLayout
@@ -505,7 +522,7 @@
             android:layout_marginLeft="@dimen/margin_side"
             android:layout_marginRight="@dimen/margin_side"
             android:layout_marginTop="@dimen/margin_top"
-            android:background="@android:color/black" />
+            android:background="@color/text_color" />
 
         <!-- Question 10 -->
         <RelativeLayout
@@ -524,6 +541,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
+            <!-- EditText:  answer10 -->
             <EditText
                 android:id="@+id/answer10"
                 android:layout_width="match_parent"
@@ -544,14 +562,14 @@
             android:layout_marginLeft="@dimen/margin_side"
             android:layout_marginRight="@dimen/margin_side"
             android:layout_marginTop="@dimen/margin_top"
-            android:background="@android:color/black" />
+            android:background="@color/text_color" />
 
         <!-- Question 11 -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <!-- TEXT:  of question11 -->
+            <!-- TextView:  question11 -->
             <TextView
                 android:id="@+id/question11"
                 android:layout_width="match_parent"
@@ -563,6 +581,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
+            <!-- EditText:  answer11 -->
             <EditText
                 android:id="@+id/answer11"
                 android:layout_width="match_parent"
@@ -583,7 +602,7 @@
             android:layout_marginLeft="@dimen/margin_side"
             android:layout_marginRight="@dimen/margin_side"
             android:layout_marginTop="@dimen/margin_top"
-            android:background="@android:color/black" />
+            android:background="@color/text_color" />
 
         <!-- Question 12 -->
         <RelativeLayout
@@ -605,6 +624,9 @@
             <!-- Radio group for question12 answers -->
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
+                android:layout_marginLeft="@dimen/margin_side"
+                android:layout_marginRight="@dimen/margin_side"
+                android:layout_marginTop="@dimen/margin_top"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/question12"
                 android:orientation="vertical">
@@ -614,7 +636,7 @@
                     android:id="@+id/city_baghdad"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@android:color/black"
+                    android:buttonTint="@color/text_color"
                     android:onClick="checkCorrect"
                     android:text="@string/baghdad" />
 
@@ -623,7 +645,7 @@
                     android:id="@+id/city_tehran"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@android:color/black"
+                    android:buttonTint="@color/text_color"
                     android:onClick="checkCorrect"
                     android:text="@string/tehran" />
 
@@ -632,7 +654,7 @@
                     android:id="@+id/city_jerusalem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@android:color/black"
+                    android:buttonTint="@color/text_color"
                     android:onClick="checkCorrect"
                     android:text="@string/jerusalem" />
             </RadioGroup>
@@ -646,9 +668,9 @@
             android:layout_marginLeft="@dimen/margin_side"
             android:layout_marginRight="@dimen/margin_side"
             android:layout_marginTop="@dimen/margin_top"
-            android:background="@android:color/black" />
+            android:background="@color/text_color" />
 
-        <!-- ButtonView to total score of quiz -->
+        <!-- ButtonView:  to total score of quiz -->
         <Button
             android:id="@+id/total_button"
             android:layout_width="match_parent"
@@ -658,7 +680,7 @@
             android:layout_marginRight="16dp"
             android:onClick="displayScore"
             android:text="@string/total_score"
-            android:textColor="@android:color/black"
+            android:textColor="@color/text_color"
             android:textSize="24sp" />
 
     </LinearLayout>

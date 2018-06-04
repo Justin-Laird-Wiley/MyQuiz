@@ -15,9 +15,13 @@ public class MainActivity extends AppCompatActivity {
     //  Defaults to "Player" if no name is entered.
     String playerName = "Player";
 
-    // Booleans for answers
-    boolean answerOneCorrect = false;
-
+    //  EditText views for the fill-in-the-blank answers
+    EditText answerThree;
+    EditText answerFour;
+    EditText answerSix;
+    EditText answerNine;
+    EditText answerTen;
+    EditText answerEleven;
 
     //  Boolean values for each question:  false for incorrect; true for correct.
     //  All variables initialized to false.
@@ -29,11 +33,22 @@ public class MainActivity extends AppCompatActivity {
     boolean question6 = false;
     boolean question7 = false;
     boolean question8 = false;
+    boolean question9 = false;
+    boolean question10 = false;
+    boolean question11 = false;
+    boolean question12 = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        answerThree = findViewById(R.id.answer3);
+        answerFour = findViewById(R.id.answer4);
+        answerSix = findViewById(R.id.answer6);
+        answerNine = findViewById(R.id.answer9);
+        answerTen = findViewById(R.id.answer10);
+        answerEleven = findViewById(R.id.answer11);
     }
 
     /**
@@ -63,21 +78,6 @@ public class MainActivity extends AppCompatActivity {
 //            complianceDisplayText.setText("");
     }
 
-    public void getAnswer(View veiw) {
-        int score = 0;
-        EditText theAnswer = findViewById(R.id.answer1);
-        String answerString = theAnswer.getText().toString();
-        if (answerString.equalsIgnoreCase("couch")) {
-            answerOneCorrect = true;
-            score += 1;
-        }
-
-        // Toast to display final score
-        Toast.makeText(MainActivity.this, playerName + ", your score is:  " + score,
-                Toast.LENGTH_LONG).show();
-    }
-
-
     /**
      * This method performs an "if-else" statement on each question to see if the correct
      * radio button was clicked.  The "if" part will set a boolean value to true for a
@@ -88,53 +88,63 @@ public class MainActivity extends AppCompatActivity {
      */
     public void checkCorrect(View view) {
 
-//        // check question 1
-//        if (view.getId() == R.id.lynn)
-//            question1 = true;
-//        else if ((view.getId() == R.id.lawrence) || (view.getId() == R.id.lowell))
-//            question1 = false;
-//
-//        // check question 2
-//        if (view.getId() == R.id.amherst)
-//            question2 = true;
-//        else if ((view.getId() == R.id.northampton) || (view.getId() == R.id.south_hadley))
-//            question2 = false;
-//
-//        // check question 3
-//        if (view.getId() == R.id.year_1926)
-//            question3 = true;
-//        else if ((view.getId() == R.id.year_1933) || (view.getId() == R.id.year_1940))
-//            question3 = false;
-//
-//        // check question 4
-//        if (view.getId() == R.id.boston_university)
-//            question4 = true;
-//        else if ((view.getId() == R.id.harvard) || (view.getId() == R.id.boston_college))
-//            question4 = false;
-//
-//        // check question 5
-//        if (view.getId() == R.id.springfield)
-//            question5 = true;
-//        else if ((view.getId() == R.id.wocrcester) || (view.getId() == R.id.pittsfield))
-//            question5 = false;
-//
-//        // check question 6
-//        if (view.getId() == R.id.religious_liberty)
-//            question6 = true;
-//        else if ((view.getId() == R.id.unpaid_taxes) || (view.getId() == R.id.plagarism))
-//            question6 = false;
-//
-//        // check question 7
-//        if (view.getId() == R.id.old_state_house)
-//            question7 = true;
-//        else if ((view.getId() == R.id.old_north_church) || (view.getId() == R.id.faneuil_hall))
-//            question7 = false;
-//
-//        // check question 8
-//        if (view.getId() == R.id.war_of_1812)
-//            question8 = true;
-//        else if ((view.getId() == R.id.revolutionary_war) || (view.getId() == R.id.mexican_american_war))
-//            question8 = false;
+        // check question 1
+        if (view.getId() == R.id.span_am_war)
+            question1 = true;
+        else if ((view.getId() == R.id.w_w_i) || (view.getId() == R.id.mex_am_war))
+            question1 = false;
+
+        // check question 2
+        if (view.getId() == R.id.wm_mckinley)
+            question2 = true;
+        else if ((view.getId() == R.id.james_garfield) || (view.getId() == R.id.abe_lincoln))
+            question2 = false;
+
+        // check question 5
+        if (view.getId() == R.id.asst_secty_navy)
+            question5 = true;
+        else if ((view.getId() == R.id.insp_gen_army) || (view.getId() == R.id.pres_army_war_college))
+            question5 = false;
+
+        // check question 7
+        if (view.getId() == R.id.niece)
+            question7 = true;
+        else if ((view.getId() == R.id.second_cousin) || (view.getId() == R.id.stepdaughter))
+            question7 = false;
+
+        // check question 8
+        if (view.getId() == R.id.year_of_1921)
+            question8 = true;
+        else if ((view.getId() == R.id.year_of_1914) || (view.getId() == R.id.year_of_1934))
+            question8 = false;
+
+        // check question 12
+        if (view.getId() == R.id.city_tehran)
+            question12 = true;
+        else if ((view.getId() == R.id.city_baghdad) || (view.getId() == R.id.city_jerusalem))
+            question12 = false;
+    }
+
+    private void checkEditTextAnswers() {
+
+        // check question 3
+        question3 = answerThree.getText().toString().equalsIgnoreCase(getResources().getString(R.string.the_progressive_party));
+
+        // check question4
+        question4 = answerFour.getText().toString().equalsIgnoreCase(getResources().getString(R.string.sagamore_hill));
+
+        // check question6
+        question6 = answerSix.getText().toString().equalsIgnoreCase(getResources().getString(R.string.new_york));
+
+        // check question9
+        question9 = answerNine.getText().toString().equalsIgnoreCase(getResources().getString(R.string.warm_springs));
+
+        // check question10
+        question10 = answerTen.getText().toString().equalsIgnoreCase(getResources().getString(R.string.supreme_court));
+
+        // check question11
+        question11 = answerEleven.getText().toString().equalsIgnoreCase(getResources().getString(R.string.social_security));
+
     }
 
     /**
@@ -163,7 +173,14 @@ public class MainActivity extends AppCompatActivity {
             totalScore += 1;
         if (question8)
             totalScore += 1;
-
+        if (question9)
+            totalScore += 1;
+        if (question10)
+            totalScore += 1;
+        if (question11)
+            totalScore += 1;
+        if (question12)
+            totalScore += 1;
         return totalScore;
     }
 
@@ -177,6 +194,7 @@ public class MainActivity extends AppCompatActivity {
     public void displayScore(View view) {
         int finalScore;
 
+        checkEditTextAnswers();
 //        getPlayerName();
         //  Call method to calculate number of correct answers
         finalScore = calculateScore();

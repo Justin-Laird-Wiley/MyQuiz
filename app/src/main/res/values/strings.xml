@@ -23,70 +23,82 @@
     <string name="compliance_message">!!! \-\- You are now rubric-compliant</string>
 
     <!-- Question strings -->
-    <string name="questionOne">Theodore Roosevelt led his cavalry charge up San Juan Hill in Cuba
+    <!-- question1 -->
+    <string name="questionOne">Question 1:\n\nTheodore Roosevelt led his cavalry charge up San Juan Hill in Cuba
         during what war?</string>
 
-    <string name="questionTwo">Theodore Roosevelt at first became President after the assassination
+    <!-- question2 -->
+    <string name="questionTwo">Question 2:\n\nTheodore Roosevelt at first became President after the assassination
         of which sitting President in 1901?</string>
 
-    <string name="questionThree">After failing to gain the Republican nomination for President in
+    <!-- question3 -->
+    <string name="questionThree">Question 3:\n\nAfter failing to gain the Republican nomination for President in
         1912, Theodore Roosevelt ran as a third party candidate in which party?</string>
 
-    <string name="questionFour">What is the name of Theodore Roosevelt\'s home in Oyster Bay, NY?</string>
+    <!-- question4 -->
+    <string name="questionFour">Question 4:\n\nWhat is the name of Theodore Roosevelt\'s home in Oyster Bay, NY?</string>
 
-    <string name="questionFive">Both Theodore and Franklin served in what Federal positionin the
+    <!-- question5 -->
+    <string name="questionFive">Question 5:\n\nBoth Theodore and Franklin served in what Federal positionin the
         War Department?</string>
 
-    <string name="questionSix">Both Theodore and Franklin served as governor of what state?</string>
+    <!-- question6 -->
+    <string name="questionSix">Question 6:\n\nBoth Theodore and Franklin served as governor of what state?</string>
 
-    <string name="questionSeven">How was Eleanor Roosevelt, Franklin\'s wife, related to Theodore
+    <!-- question7 -->
+    <string name="questionSeven">Question 7:\n\nHow was Eleanor Roosevelt, Franklin\'s wife, related to Theodore
         Roosevelt?</string>
 
-    <string name="questionEight">In what year did Franklin Delano Roosevelt contract polio?</string>
+    <!-- question8 -->
+    <string name="questionEight">Question 8:\n\nIn what year did Franklin Delano Roosevelt contract polio?</string>
 
-    <string name="questionNine">Franklin Roosevelt founded a polio treatment center in what Georgia
+    <!-- question9 -->
+    <string name="questionNine">Question 9:\n\nFranklin Roosevelt founded a polio treatment center in what Georgia
         town?</string>
 
-    <string name="questionTen">Thwarted by Congress in his 2nd term, Franklin Roosevelt attempted
+    <!-- question10 -->
+    <string name="questionTen">Question 10:\n\nThwarted by Congress in his 2nd term, Franklin Roosevelt attempted
         to stack which branch of government with appointees favorable to his legislative agenda?</string>
 
-    <string name="questionEleven">Franklin Delano Roosevelt\'s most far-reaching New Deal program,
+    <!-- question11 -->
+    <string name="questionEleven">Question 11:\n\nFranklin Delano Roosevelt\'s most far-reaching New Deal program,
         which provided government pensions for retirees, was called?</string>
 
-    <string name="questionTwelve">Franklin Roosevelt met with Josef Stalin for the first time in 1943 in
+    <!-- question12 -->
+    <string name="questionTwelve">Question 12:\n\nFranklin Roosevelt met with Josef Stalin for the first time in 1943 in
         what Mideast city?</string>
 
     <!-- Answer strings -->
-    <!-- question1-->
+    <!-- answer1-->
     <string name="world_war_one">World War I</string>
     <string name="mexican_american_war">Mexican\-American War</string>
     <string name="spanish_american_war">Spanish\-American War</string>
 
-    <!-- question2 -->
+    <!-- answer2 -->
     <string name="mckinley">William McKinley</string>
     <string name="garfield">James Garfield</string>
     <string name="lincoln">Abraham Lincoln</string>
 
-    <!-- question3 -->
-    <string name="the_progressive_party">progressive</string>
+    <!-- answer3 -->
+    <string name="the_progressive_party">Progressive</string>
 
-    <!-- question4 -->
+    <!-- answer4 -->
     <string name="sagamore_hill">Sagamore Hill</string>
 
-    <!-- question5 -->
+    <!-- answer5 -->
     <string name="assistant_secretary_navy">Assistant Secretary of the Navy</string>
     <string name="inspector_general_army">Inspector General of the Army</string>
     <string name="president_army_war_college">President of the Army War College</string>
 
-    <!-- question6 -->
+    <!-- answer6 -->
     <string name="new_york">New York</string>
 
-    <!-- question7 -->
+    <!-- answer7 -->
     <string name="cousin">They were second cousins</string>
     <string name="niece">She was his niece</string>
     <string name="stepdaughter">She was his stepdaughter</string>
 
-    <!-- question8 -->
+    <!-- answer8 -->
     <string name="year_1914">1914</string>
     <string name="year_1921">1921</string>
     <string name="year_1934">1934</string>
@@ -104,8 +116,6 @@
     <string name="baghdad">Baghdad</string>
     <string name="tehran">Tehran</string>
     <string name="jerusalem">Jerusalem</string>
-
-
 
     <!-- Total Score button -->
     <string name="total_score">Compute Score</string>
