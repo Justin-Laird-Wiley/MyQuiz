@@ -4,23 +4,12 @@
     <!-- Title strings -->
     <string name="title">The Roosevelts</string>
     <string name="subtitle">
-        \tThis is a trivia quiz about historical events, as depicted on US postage
-        stamps, that occurred in the state of Massachusetts in the United States.\n
+        \tThis is a trivia quiz about the Roosevelt Presidents \-\- Theodore and Franklin.\n\n
 
-        \tAfter each question, select the button next to the answer you think is correct; then click
-        the Total Score button at the end to have your score displayed in a pop-up message.\n
-
-        \tIf you like, you can enter your name in the field below, and it will be displayed with your
-        score at the end of the quiz.\n
-
-        \tThe check box exists to comply with project rubric \-\- functionally, it has nothing to do
-        with the quiz, and is there for your gratification and amusement.
+        \tThe questions are fill\-in\-the\-blank, multiple\-choice, and one question in which to check
+        all that apply.  After answering the questions, click the Total Score button at the end to have
+        your score displayed in a pop-up message.
     </string>
-
-    <!-- EditText and CheckBox strings -->
-    <string name="name_edit_text_hint">Enter your name, if you like</string>
-    <string name="mandatory_check_box">Check here for rubric compliance</string>
-    <string name="compliance_message">!!! \-\- You are now rubric-compliant</string>
 
     <!-- Question strings -->
     <!-- question1 -->
@@ -39,33 +28,27 @@
     <string name="questionFour">Question 4:\n\nWhat is the name of Theodore Roosevelt\'s home in Oyster Bay, NY?</string>
 
     <!-- question5 -->
-    <string name="questionFive">Question 5:\n\nBoth Theodore and Franklin served in what Federal positionin the
-        War Department?</string>
-
-    <!-- question6 -->
-    <string name="questionSix">Question 6:\n\nBoth Theodore and Franklin served as governor of what state?</string>
-
-    <!-- question7 -->
-    <string name="questionSeven">Question 7:\n\nHow was Eleanor Roosevelt, Franklin\'s wife, related to Theodore
+    <string name="questionFive">Question 5:\n\nHow was Eleanor Roosevelt, Franklin\'s wife, related to Theodore
         Roosevelt?</string>
 
-    <!-- question8 -->
-    <string name="questionEight">Question 8:\n\nIn what year did Franklin Delano Roosevelt contract polio?</string>
+    <!-- question6 -->
+    <string name="questionSix">Question 6:\n\nFranklin Roosevelt followed in Theodore\'s footsteps
+        in several notable ways.  What were they?  (check all that apply)</string>
 
-    <!-- question9 -->
-    <string name="questionNine">Question 9:\n\nFranklin Roosevelt founded a polio treatment center in what Georgia
+    <!-- question7 -->
+    <string name="questionSeven">Question 7:\n\nFranklin Roosevelt founded a polio treatment center in what Georgia
         town?</string>
 
-    <!-- question10 -->
-    <string name="questionTen">Question 10:\n\nThwarted by Congress in his 2nd term, Franklin Roosevelt attempted
+    <!-- question8 -->
+    <string name="questionEight">Question 8:\n\nThwarted by Congress in his 2nd term, Franklin Roosevelt attempted
         to stack which branch of government with appointees favorable to his legislative agenda?</string>
 
-    <!-- question11 -->
-    <string name="questionEleven">Question 11:\n\nFranklin Delano Roosevelt\'s most far-reaching New Deal program,
+    <!-- question9 -->
+    <string name="questionNine">Question 9:\n\nFranklin Delano Roosevelt\'s most far-reaching New Deal program,
         which provided government pensions for retirees, was called?</string>
 
-    <!-- question12 -->
-    <string name="questionTwelve">Question 12:\n\nFranklin Roosevelt met with Josef Stalin for the first time in 1943 in
+    <!-- question10 -->
+    <string name="questionTen">Question 10:\n\nFranklin Roosevelt met with Josef Stalin for the first time in 1943 in
         what Mideast city?</string>
 
     <!-- Answer strings -->
@@ -86,46 +69,32 @@
     <string name="sagamore_hill">Sagamore Hill</string>
 
     <!-- answer5 -->
-    <string name="assistant_secretary_navy">Assistant Secretary of the Navy</string>
-    <string name="inspector_general_army">Inspector General of the Army</string>
-    <string name="president_army_war_college">President of the Army War College</string>
-
-    <!-- answer6 -->
-    <string name="new_york">New York</string>
-
-    <!-- answer7 -->
     <string name="cousin">They were second cousins</string>
     <string name="niece">She was his niece</string>
     <string name="stepdaughter">She was his stepdaughter</string>
 
-    <!-- answer8 -->
-    <string name="year_1914">1914</string>
-    <string name="year_1921">1921</string>
-    <string name="year_1934">1934</string>
+    <!-- answer6 -->
+    <string name="harvard_grad">Harvard University graduate</string>
+    <string name="asst_secy_navy">Assistant Secretary of the Navy</string>
+    <string name="gov_new_york">Governor of New York</string>
 
-    <!-- answer9 -->
+    <!-- answer7 -->
     <string name="warm_springs">Warm Springs</string>
 
-    <!-- answer10 -->
+    <!-- answer8 -->
     <string name="supreme_court">Supreme Court</string>
 
-    <!-- answer11 -->
+    <!-- answer9 -->
     <string name="social_security">Social Security</string>
 
-    <!-- answer12 -->
+    <!-- answer10 -->
     <string name="baghdad">Baghdad</string>
     <string name="tehran">Tehran</string>
     <string name="jerusalem">Jerusalem</string>
 
+    <string name="answer_string">Answer</string>
+
     <!-- Total Score button -->
     <string name="total_score">Compute Score</string>
-
-    <string name="answer_button_text">Check Answer</string>
-
-
-
-
-    <!-- Strings for MyQuiz -->
-    <string name="answer_string">Answer</string>
 
 </resources>

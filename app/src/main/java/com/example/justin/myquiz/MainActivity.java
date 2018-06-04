@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 //import android.widget.CheckBox;
+import android.widget.CheckBox;
 import android.widget.EditText;
 //import android.widget.TextView;
 import android.widget.Toast;
@@ -18,10 +19,13 @@ public class MainActivity extends AppCompatActivity {
     //  EditText views for the fill-in-the-blank answers
     EditText answerThree;
     EditText answerFour;
-    EditText answerSix;
+    EditText answerSeven;
+    EditText answerEight;
     EditText answerNine;
-    EditText answerTen;
-    EditText answerEleven;
+
+    CheckBox attendedHarvard;
+    CheckBox asstSecyNavy;
+    CheckBox governorNewYork;
 
     //  Boolean values for each question:  false for incorrect; true for correct.
     //  All variables initialized to false.
@@ -35,8 +39,7 @@ public class MainActivity extends AppCompatActivity {
     boolean question8 = false;
     boolean question9 = false;
     boolean question10 = false;
-    boolean question11 = false;
-    boolean question12 = false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,10 +48,13 @@ public class MainActivity extends AppCompatActivity {
 
         answerThree = findViewById(R.id.answer3);
         answerFour = findViewById(R.id.answer4);
-        answerSix = findViewById(R.id.answer6);
+        answerSeven = findViewById(R.id.answer7);
+        answerEight = findViewById(R.id.answer8);
         answerNine = findViewById(R.id.answer9);
-        answerTen = findViewById(R.id.answer10);
-        answerEleven = findViewById(R.id.answer11);
+
+        attendedHarvard = findViewById(R.id.attended_harvard);
+        asstSecyNavy = findViewById(R.id.asst_secy_navy);
+        governorNewYork = findViewById(R.id.governor_new_york);
     }
 
     /**
@@ -62,23 +68,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * This method checks the rubric-compliance CheckBox.  If isChecked() is true, compliance_message
-     * is displayed; if false, the text is set to blank ("").
-     * @param view of CheckBox
-     */
-    public void displayComplianceMessage(View view) {
-
-        //  Find the CheckBox and TextView and create objects for them
-//        CheckBox isBoxChecked = (CheckBox) findViewById(R.id.compliance_check_box);
-//        TextView complianceDisplayText = (TextView) findViewById(R.id.compliance_message);
-//
-//        if (isBoxChecked.isChecked()){
-//            complianceDisplayText.setText(R.string.compliance_message);
-//        } else
-//            complianceDisplayText.setText("");
-    }
-
-    /**
      * This method performs an "if-else" statement on each question to see if the correct
      * radio button was clicked.  The "if" part will set a boolean value to true for a
      * correct answer, and the "else" part will set the boolean to false if either of the
@@ -87,6 +76,9 @@ public class MainActivity extends AppCompatActivity {
      * @param view of RadioButton that is checked
      */
     public void checkCorrect(View view) {
+
+        // RadioButton syntax and methods found at the Android Developer website:
+        // https://developer.android.com/guide/topics/ui/controls/radiobutton
 
         // check question 1
         if (view.getId() == R.id.span_am_war)
@@ -118,33 +110,44 @@ public class MainActivity extends AppCompatActivity {
         else if ((view.getId() == R.id.year_of_1914) || (view.getId() == R.id.year_of_1934))
             question8 = false;
 
-        // check question 12
+        // check question 10
         if (view.getId() == R.id.city_tehran)
-            question12 = true;
+            question10 = true;
         else if ((view.getId() == R.id.city_baghdad) || (view.getId() == R.id.city_jerusalem))
-            question12 = false;
+            question10 = false;
     }
 
     private void checkEditTextAnswers() {
 
-        // check question 3
+
+
+        CheckBox attendedHarvard = (CheckBox) findViewById(R.id.attended_harvard);
+        boolean hasChocolate = attendedHarvard.isChecked();
+
+
+
+        // getResources method found on StackOverflow:
+        // https://stackoverflow.com/questions/7493287/android-how-do-i-get-string-from-resources-using-its-name
+
+
+
+        //
+        // https://stackoverflow.com/questions/6819604/comparison-of-two-strings-doesnt-work-in-android
+
+        // check question3
         question3 = answerThree.getText().toString().equalsIgnoreCase(getResources().getString(R.string.the_progressive_party));
 
         // check question4
         question4 = answerFour.getText().toString().equalsIgnoreCase(getResources().getString(R.string.sagamore_hill));
 
-        // check question6
-        question6 = answerSix.getText().toString().equalsIgnoreCase(getResources().getString(R.string.new_york));
+        // check question7
+        question7 = answerSeven.getText().toString().equalsIgnoreCase(getResources().getString(R.string.warm_springs));
+
+        // check question8
+        question8 = answerEight.getText().toString().equalsIgnoreCase(getResources().getString(R.string.supreme_court));
 
         // check question9
-        question9 = answerNine.getText().toString().equalsIgnoreCase(getResources().getString(R.string.warm_springs));
-
-        // check question10
-        question10 = answerTen.getText().toString().equalsIgnoreCase(getResources().getString(R.string.supreme_court));
-
-        // check question11
-        question11 = answerEleven.getText().toString().equalsIgnoreCase(getResources().getString(R.string.social_security));
-
+        question9 = answerNine.getText().toString().equalsIgnoreCase(getResources().getString(R.string.social_security));
     }
 
     /**
@@ -176,10 +179,6 @@ public class MainActivity extends AppCompatActivity {
         if (question9)
             totalScore += 1;
         if (question10)
-            totalScore += 1;
-        if (question11)
-            totalScore += 1;
-        if (question12)
             totalScore += 1;
         return totalScore;
     }

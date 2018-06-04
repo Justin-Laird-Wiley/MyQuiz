@@ -34,6 +34,26 @@
             android:layout_marginTop="@dimen/margin_top"
             android:background="@color/text_color" />
 
+        <!-- TextView:  subtitle (explanatory paragraph) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/subtitle"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="@dimen/margin_side"
+            android:layout_marginRight="@dimen/margin_side"
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@color/text_color" />
+
         <!-- Question 1 -->
         <RelativeLayout
             android:layout_width="match_parent"
@@ -55,10 +75,10 @@
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/question1"
                 android:layout_marginLeft="@dimen/margin_side"
                 android:layout_marginRight="@dimen/margin_side"
                 android:layout_marginTop="@dimen/margin_top"
-                android:layout_below="@id/question1"
                 android:orientation="vertical">
 
                 <!-- RadioButton:  World War I -->
@@ -120,11 +140,11 @@
             <!-- Radio group for question2 answers -->
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question2"
                 android:layout_marginLeft="@dimen/margin_side"
                 android:layout_marginRight="@dimen/margin_side"
                 android:layout_marginTop="@dimen/margin_top"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/question2"
                 android:orientation="vertical">
 
                 <!-- RadioButton:  Garfield -->
@@ -267,117 +287,10 @@
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_side"
-                android:layout_marginRight="@dimen/margin_side"
-                android:layout_marginTop="@dimen/margin_top"
                 android:layout_below="@id/question5"
-                android:orientation="vertical">
-
-                <!-- RadioButton:  Inspector General of the Army -->
-                <RadioButton
-                    android:id="@+id/insp_gen_army"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/text_color"
-                    android:onClick="checkCorrect"
-                    android:text="@string/inspector_general_army" />
-
-                <!-- RadioButton:  President of the Army War College -->
-                <RadioButton
-                    android:id="@+id/pres_army_war_college"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/text_color"
-                    android:onClick="checkCorrect"
-                    android:text="@string/president_army_war_college" />
-
-                <!-- RadioButton:  Assistant Secretary of the Navy -->
-                <RadioButton
-                    android:id="@+id/asst_secty_navy"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/text_color"
-                    android:onClick="checkCorrect"
-                    android:text="@string/assistant_secretary_navy" />
-
-            </RadioGroup>
-
-        </RelativeLayout>
-
-        <!-- Separator -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginLeft="@dimen/margin_side"
-            android:layout_marginRight="@dimen/margin_side"
-            android:layout_marginTop="@dimen/margin_top"
-            android:background="@color/text_color" />
-
-        <!-- Question 6 -->
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <!-- TextView:  question6 -->
-            <TextView
-                android:id="@+id/question6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/margin_side"
                 android:layout_marginRight="@dimen/margin_side"
                 android:layout_marginTop="@dimen/margin_top"
-                android:text="@string/questionSix"
-                android:textColor="#000000"
-                android:textSize="16sp" />
-
-            <!-- EditText:  answer6-->
-            <EditText
-                android:id="@+id/answer6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/question6"
-                android:layout_marginLeft="@dimen/margin_side"
-                android:layout_marginRight="@dimen/margin_side"
-                android:layout_marginTop="@dimen/margin_top"
-                android:hint="@string/answer_string"
-                android:inputType="text" />
-
-        </RelativeLayout>
-
-        <!-- Separator -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginLeft="@dimen/margin_side"
-            android:layout_marginRight="@dimen/margin_side"
-            android:layout_marginTop="@dimen/margin_top"
-            android:background="@color/text_color" />
-
-        <!-- Question 7-->
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <!-- TextView:  question7 -->
-            <TextView
-                android:id="@+id/question7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_side"
-                android:layout_marginRight="@dimen/margin_side"
-                android:layout_marginTop="@dimen/margin_top"
-                android:text="@string/questionSeven"
-                android:textColor="#000000"
-                android:textSize="16sp" />
-
-            <!-- Radio group for question7 answers -->
-            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="fill_parent"
-                android:layout_marginLeft="@dimen/margin_side"
-                android:layout_marginRight="@dimen/margin_side"
-                android:layout_marginTop="@dimen/margin_top"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/question7"
                 android:orientation="vertical">
 
                 <!-- RadioButton:  Second Cousin -->
@@ -420,6 +333,108 @@
             android:layout_marginTop="@dimen/margin_top"
             android:background="@color/text_color" />
 
+        <!-- Question 6 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- TextView:  question6 -->
+            <TextView
+                android:id="@+id/question6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_side"
+                android:layout_marginRight="@dimen/margin_side"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="@string/questionSix"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- CheckBox:  both attended Harvard -->
+            <CheckBox
+                android:id="@+id/attended_harvard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question6"
+                android:layout_marginLeft="@dimen/margin_side"
+                android:layout_marginStart="@dimen/margin_side"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="@string/harvard_grad"
+                android:textSize="16sp" />
+
+            <!-- CheckBox:  both were Assistant Secretary of the Navy -->
+            <CheckBox
+                android:id="@+id/asst_secy_navy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/attended_harvard"
+                android:layout_marginLeft="@dimen/margin_side"
+                android:layout_marginStart="@dimen/margin_side"
+                android:text="@string/asst_secy_navy"
+                android:textSize="16sp" />
+
+            <!-- CheckBox:  both were Governor of New York -->
+            <CheckBox
+                android:id="@+id/governor_new_york"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/asst_secy_navy"
+                android:layout_marginLeft="@dimen/margin_side"
+                android:layout_marginStart="@dimen/margin_side"
+                android:text="@string/gov_new_york"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="@dimen/margin_side"
+            android:layout_marginRight="@dimen/margin_side"
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@color/text_color" />
+
+        <!-- Question 7 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- TextView:  question7 -->
+            <TextView
+                android:id="@+id/question7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_side"
+                android:layout_marginRight="@dimen/margin_side"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="@string/questionSeven"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- EditText:  answer7-->
+            <EditText
+                android:id="@+id/answer7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question7"
+                android:layout_marginLeft="@dimen/margin_side"
+                android:layout_marginRight="@dimen/margin_side"
+                android:layout_marginTop="@dimen/margin_top"
+                android:hint="@string/answer_string"
+                android:inputType="text" />
+
+        </RelativeLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="@dimen/margin_side"
+            android:layout_marginRight="@dimen/margin_side"
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@color/text_color" />
+
         <!-- Question 8 -->
         <RelativeLayout
             android:layout_width="match_parent"
@@ -437,43 +452,17 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <!-- Radio group for question8 answers -->
-            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="fill_parent"
+            <!-- EditText:  answer8 -->
+            <EditText
+                android:id="@+id/answer8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question8"
                 android:layout_marginLeft="@dimen/margin_side"
                 android:layout_marginRight="@dimen/margin_side"
                 android:layout_marginTop="@dimen/margin_top"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/question8"
-                android:orientation="vertical">
-
-                <!-- RadioButton:  1914 -->
-                <RadioButton
-                    android:id="@+id/year_of_1914"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/text_color"
-                    android:onClick="checkCorrect"
-                    android:text="@string/year_1914" />
-
-                <!-- RadioButton:  1921 -->
-                <RadioButton
-                    android:id="@+id/year_of_1921"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/text_color"
-                    android:onClick="checkCorrect"
-                    android:text="@string/year_1921" />
-
-                <!-- RadioButton:  1934 -->
-                <RadioButton
-                    android:id="@+id/year_of_1934"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/text_color"
-                    android:onClick="checkCorrect"
-                    android:text="@string/year_1934" />
-            </RadioGroup>
+                android:hint="@string/answer_string"
+                android:inputType="text" />
 
         </RelativeLayout>
 
@@ -496,12 +485,14 @@
                 android:id="@+id/question9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_marginLeft="@dimen/margin_side"
+                android:layout_marginRight="@dimen/margin_side"
+                android:layout_marginTop="@dimen/margin_top"
                 android:text="@string/questionNine"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <!-- EditText:  answer9-->
+            <!-- EditText:  answer9 -->
             <EditText
                 android:id="@+id/answer9"
                 android:layout_width="match_parent"
@@ -541,94 +532,14 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <!-- EditText:  answer10 -->
-            <EditText
-                android:id="@+id/answer10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/question10"
-                android:layout_marginLeft="@dimen/margin_side"
-                android:layout_marginRight="@dimen/margin_side"
-                android:layout_marginTop="@dimen/margin_top"
-                android:hint="@string/answer_string"
-                android:inputType="text" />
-
-        </RelativeLayout>
-
-        <!-- Separator -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginLeft="@dimen/margin_side"
-            android:layout_marginRight="@dimen/margin_side"
-            android:layout_marginTop="@dimen/margin_top"
-            android:background="@color/text_color" />
-
-        <!-- Question 11 -->
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <!-- TextView:  question11 -->
-            <TextView
-                android:id="@+id/question11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_side"
-                android:layout_marginRight="@dimen/margin_side"
-                android:layout_marginTop="@dimen/margin_top"
-                android:text="@string/questionEleven"
-                android:textColor="#000000"
-                android:textSize="16sp" />
-
-            <!-- EditText:  answer11 -->
-            <EditText
-                android:id="@+id/answer11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/question11"
-                android:layout_marginLeft="@dimen/margin_side"
-                android:layout_marginRight="@dimen/margin_side"
-                android:layout_marginTop="@dimen/margin_top"
-                android:hint="@string/answer_string"
-                android:inputType="text" />
-
-        </RelativeLayout>
-
-        <!-- Separator -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginLeft="@dimen/margin_side"
-            android:layout_marginRight="@dimen/margin_side"
-            android:layout_marginTop="@dimen/margin_top"
-            android:background="@color/text_color" />
-
-        <!-- Question 12 -->
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <!-- TextView:  question12 -->
-            <TextView
-                android:id="@+id/question12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_side"
-                android:layout_marginRight="@dimen/margin_side"
-                android:layout_marginTop="@dimen/margin_top"
-                android:text="@string/questionTwelve"
-                android:textColor="#000000"
-                android:textSize="16sp" />
-
-            <!-- Radio group for question12 answers -->
+            <!-- Radio group for question10 answers -->
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question10"
                 android:layout_marginLeft="@dimen/margin_side"
                 android:layout_marginRight="@dimen/margin_side"
                 android:layout_marginTop="@dimen/margin_top"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/question12"
                 android:orientation="vertical">
 
                 <!-- RadioButton:  Baghdad -->
