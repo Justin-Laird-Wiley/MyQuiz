@@ -1,12 +1,13 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">QUIZ QUIZ QUIZ</string>
+    <string name="app_name">QUIZICAL</string>
 
     <!-- Title strings -->
     <string name="title">The Roosevelts</string>
     <string name="subtitle">
-        \tThis is a trivia quiz about the Roosevelt Presidents \-\- Theodore and Franklin.\n\n
+        \t\t\tThis is a trivia quiz about the Roosevelts, Theodore and Franklin, asking questions about
+        their lives and careers before and during their presidencies.\n\n
 
-        \tThe questions are fill\-in\-the\-blank, multiple\-choice, and one question in which to check
+        \t\t\tThe questions are fill\-in\-the\-blank, multiple\-choice, and one question in which to check
         all that apply.  After answering the questions, click the Total Score button at the end to have
         your score displayed in a pop-up message.
     </string>
@@ -92,6 +93,7 @@
     <string name="tehran">Tehran</string>
     <string name="jerusalem">Jerusalem</string>
 
+    <!-- Hint text for EditText views -->
     <string name="answer_string">Answer</string>
 
     <!-- Total Score button -->
