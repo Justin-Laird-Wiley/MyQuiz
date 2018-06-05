@@ -99,4 +99,9 @@
     <!-- Total Score button -->
     <string name="total_score">Compute Score</string>
 
+    <!-- Score message strings -->
+    <string name="all_correct">10 for 10 \-\- you get them all right!</string>
+    <string name="needs_work">This is embarrassing \-\- you got at
+        least one wrong.</string>
+
 </resources>

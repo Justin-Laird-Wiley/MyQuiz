@@ -153,13 +153,20 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displayScore(View view) {
 
+        String message;
+
         //  Call methods to check for the correct answers to the three types of questions
         checkRadioButtonAnswers();
         checkEditTextAnswers();
         checkCheckBoxAnswers();
 
+        if (calculateScore() == 10)
+            message = getResources().getString(R.string.all_correct);
+        else
+            message = getResources().getString(R.string.needs_work);
+
         // Toast to display final score
-        Toast.makeText(MainActivity.this,  "Your score is:  " + calculateScore(),
+        Toast.makeText(MainActivity.this, message,
                 Toast.LENGTH_LONG).show();
     }
 }

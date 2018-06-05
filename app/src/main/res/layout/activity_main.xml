@@ -23,7 +23,8 @@
             android:text="@string/title"
             android:textAllCaps="true"
             android:textColor="@color/text_color"
-            android:textSize="@dimen/title_text_size" />
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold|italic" />
 
         <!-- Separator -->
         <View
@@ -352,6 +353,7 @@
                 android:layout_marginLeft="@dimen/margin_side"
                 android:layout_marginStart="@dimen/margin_side"
                 android:layout_marginTop="@dimen/margin_top"
+                android:buttonTint="@color/radio_button_color"
                 android:text="@string/harvard_grad"
                 android:textSize="@dimen/question_text_size" />
 
@@ -363,6 +365,7 @@
                 android:layout_below="@+id/attended_harvard"
                 android:layout_marginLeft="@dimen/margin_side"
                 android:layout_marginStart="@dimen/margin_side"
+                android:buttonTint="@color/radio_button_color"
                 android:text="@string/asst_secy_navy"
                 android:textSize="@dimen/question_text_size" />
 
@@ -374,6 +377,7 @@
                 android:layout_below="@+id/asst_secy_navy"
                 android:layout_marginLeft="@dimen/margin_side"
                 android:layout_marginStart="@dimen/margin_side"
+                android:buttonTint="@color/radio_button_color"
                 android:text="@string/gov_new_york"
                 android:textSize="@dimen/question_text_size" />
 
