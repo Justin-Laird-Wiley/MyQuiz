@@ -146,8 +146,10 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Method to display the number of correct answers in the quiz.  Called when the "Total Score"
-     * button is pressed.  Method calls "calculateScore" and uses the returned "score" in a toast
-     * message.
+     * button is pressed.  Method calls "calculateScore" and generates one of three messages based
+     * on the number of correct answers:  "Show off!  You got all 10 right!" for 10 correct answers;
+     * "Embarrassing!  You only got 'X' right." for 1 to 9 correct answers; and "Zero right!
+     * Are you dead?"  for 0 correct answers.
      *
      * @param view of Button "Total Score"
      */
@@ -160,12 +162,23 @@ public class MainActivity extends AppCompatActivity {
         checkEditTextAnswers();
         checkCheckBoxAnswers();
 
-        if (calculateScore() == 10)
+        //  Formatting for inserting a string variable into resource string found at tutsplus.com:
+        //  https://code.tutsplus.com/tutorials/android-sdk-quick-tip-formatting-resource-strings--mobile-1775
+        if (calculateScore() == 10) {
+            //  message:  Show off!  You got all 10 right!
             message = getResources().getString(R.string.all_correct);
-        else
+            message = String.format(message, calculateScore());
+        }
+        else if (calculateScore() != 0) {
+            //  message:  Embarrassing!  You only got "X" right.
             message = getResources().getString(R.string.needs_work);
+            message = String.format(message, calculateScore());
+        } else {
+            //  message:  Zero right!  Are you dead?
+            message = getResources().getString(R.string.none_right);
+        }
 
-        // Toast to display final score
+        //  Toast to display final score message
         Toast.makeText(MainActivity.this, message,
                 Toast.LENGTH_LONG).show();
     }

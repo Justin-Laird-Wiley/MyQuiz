@@ -100,8 +100,8 @@
     <string name="total_score">Compute Score</string>
 
     <!-- Score message strings -->
-    <string name="all_correct">10 for 10 \-\- you get them all right!</string>
-    <string name="needs_work">This is embarrassing \-\- you got at
-        least one wrong.</string>
+    <string name="all_correct">Show off!  You got all %1$s right!</string>
+    <string name="needs_work">Embarrassing!  You only got %1$s right.</string>
+    <string name="none_right">Zero right!  Are you dead?</string>
 
 </resources>
